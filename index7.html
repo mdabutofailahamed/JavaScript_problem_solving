@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findLeapYear(yearsArray) {
+  const leapYears = [];
+  
+  for (let i = 0; i < yearsArray.length; i++) {
+    const year = yearsArray[i];
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+      leapYears.push(year);
+    }
+  }
+  return leapYears;
+}
+const years = [2023,2024,2025,2028,2030];
+var leapYears = findLeapYear(years);
+document.write("Leap Years: ", leapYears);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The indexOf() Method</h2>
+
+<p>indexOf() returns the position of a specified value in an array:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+var fruits = ['Apple','Banana', 'Orange'];
+let index = fruits.indexOf('Banana');
+document.getElementById("demo").innerHTML = 'index number='+index;
+if(index!==-1){
+    fruits[index]='Mango';
+}
+document.getElementById("demo1").innerHTML = fruits;
+ fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+fruits.push('watermelon');
+document.getElementById("demo3").innerHTML=fruits;
+</script>
+
+</body>
+</html>

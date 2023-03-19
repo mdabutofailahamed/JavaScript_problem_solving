@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Compute the grade</title>
+</head>
+<body>
+  
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+  <script>
+    function myFunction() {
+      let marks = prompt("Please enter your marks");
+      if (marks <=39){
+        document.getElementById("demo").innerHTML = "Grade is F";    
+    } 
+  else if (marks <= 40) {
+    document.getElementById("demo").innerHTML = "Grade is D";    
+            } 
+  else if (marks <= 50) 
+       {
+        document.getElementById("demo").innerHTML = "Grade is C";    
+  } else if (marks <= 60) {
+    document.getElementById("demo").innerHTML = "Grade is B";    
+  } else if (marks <= 80) {
+    document.getElementById("demo").innerHTML = "Grade is A";     
+}
+
+    }
+    </script>
+    
+</body>
+</html>
